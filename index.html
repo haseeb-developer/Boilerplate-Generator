@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus Boiler - Ultra Advanced Boilerplate Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="particles-container" id="particles-js"></div>
+
+    <div class="app-container">
+      <header class="app-header">
+        <div class="logo-container">
+          <div class="logo-icon">
+            <svg viewBox="0 0 100 100" class="logo-svg">
+              <path class="logo-path" d="M20,50 Q50,10 80,50 T140,50" />
+              <circle class="logo-circle" cx="50" cy="50" r="15" />
+            </svg>
+          </div>
+          <h1 class="logo-text">Nexus<span>Boiler</span></h1>
+        </div>
+        <div class="theme-toggle">
+          <input type="checkbox" id="theme-switch" class="theme-switch" />
+          <label for="theme-switch" class="theme-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="theme-ball"></span>
+          </label>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="hero-section">
+          <div class="hero-text">
+            <h2 class="hero-title">
+              Generate <span class="typing-text"></span>
+            </h2>
+            <p class="hero-subtitle">
+              Ultra modern boilerplates for your next project
+            </p>
+          </div>
+          <div class="hero-illustration">
+            <div class="code-window">
+              <div class="window-header">
+                <div class="window-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="window-title">boilerplate.js</div>
+              </div>
+              <div class="window-content">
+                <pre><code class="language-javascript">// Ultra modern JavaScript boilerplate
+import { nextGen } from '@nexus/core';
+
+class App {
+  constructor() {
+    this.init();
+  }
+  
+  init() {
+    nextGen.activate();
+  }
+}
+
+export default new App();</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="generator-section">
+          <div class="tech-selector">
+            <div class="selector-header">
+              <h3>Select Technology</h3>
+              <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input
+                  type="text"
+                  placeholder="Search technologies..."
+                  id="tech-search"
+                />
+              </div>
+            </div>
+            <div class="tech-grid" id="tech-grid">
+              <!-- Technologies will be added via JS -->
+            </div>
+          </div>
+
+          <div class="options-panel" id="options-panel">
+            <div class="panel-header">
+              <h3>Configuration Options</h3>
+              <button class="close-panel" id="close-panel">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="panel-content" id="panel-content">
+              <!-- Options will be added dynamically -->
+            </div>
+            <div class="panel-footer">
+              <button class="btn generate-btn" id="generate-btn">
+                <span>Generate Boilerplate</span>
+                <i class="fas fa-bolt"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="output-section" id="output-section">
+          <div class="output-header">
+            <h3>Your Boilerplate Code</h3>
+            <div class="output-actions">
+              <button class="btn copy-btn" id="copy-btn">
+                <i class="far fa-copy"></i> Copy
+              </button>
+              <button class="btn download-btn" id="download-btn">
+                <i class="fas fa-download"></i> Download
+              </button>
+            </div>
+          </div>
+          <div class="output-content">
+            <pre><code id="output-code"></code></pre>
+          </div>
+        </div>
+      </main>
+
+      <footer class="app-footer">
+        <div class="footer-content">
+          <p>Made with <i class="fas fa-heart pulse"></i> by DevNexus</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="floating-elements">
+      <div class="floating-element element-1"></div>
+      <div class="floating-element element-2"></div>
+      <div class="floating-element element-3"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
